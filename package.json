@@ -1,5 +1,5 @@
 {
-  "name": "node-starter",
+  "name": "wasm-test",
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

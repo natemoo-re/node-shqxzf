@@ -4,8 +4,9 @@ require('./exec');
 
 async function init() {
   const go = new Go();
-  console.log(path.resolve('./tycho.wasm'));
-  const buf = fs.readFileSync(path.resolve('./tycho.wasm'));
+  const src = path.resolve('wasm-test/wasm/tycho.wasm');
+  console.log(src);
+  const buf = fs.readFileSync(src);
   await WebAssembly.instantiate(new Uint8Array(buf), go.importObject);
   return { BuildDocument: globalThis.BuildDocument };
 }
