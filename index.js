@@ -1,5 +1,5 @@
 // run `node index.js` in the terminal
-let esbuild = require('esbuild-wasm');
+// let esbuild = require('esbuild-wasm');
 let init = require('./wasm/init');
 
 async function run() {
